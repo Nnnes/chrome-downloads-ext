@@ -1,0 +1,99 @@
+#date {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#content {
+	display: flex;
+	align-items: center;
+
+	width: 80%;
+	max-width: 100%;
+	min-height: fit-content;
+	margin: 2px auto;
+	border: none !important;
+	border-radius: 0;
+
+	box-shadow: none !important;
+}
+
+#content>#file-icon-wrapper {
+	display: none;
+	margin: 0 4px;
+}
+
+#content>#details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	border: none;
+	padding: 0;
+}
+
+#content>#details>div {
+	display: contents;
+	white-space: nowrap;
+}
+
+#content>#details>div>a {
+	display: block;
+	width: fit-content;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#content>#details>#title-area>span {
+	width: fit-content;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#content>#details>#title-area {
+	display: flex;
+	width: 30%;
+	margin: 0 1em 0 0;
+}
+
+#content>#details #url {
+	flex: 1;
+	margin: 0 1em 0 0;
+}
+
+#content>#details>#safe {
+	width: fit-content;
+	margin: 0;
+}
+
+#content>#details>#safe cr-button {
+	margin: 0 0 0 1em !important;
+	padding: 2px;
+	--cr-button-height: fit-content;
+}
+
+#content>#details>#safe #show {
+	margin: 0;
+}
+
+#content>#details>#safe #controlled-by {
+	margin: 0;
+}
+
+#content>.more-options div {
+	display: flex;
+}
+
+#content>.more-options div cr-icon-button {
+	margin: 0 0 0 1em;
+	--cr-icon-button-size: 18px;
+}
+
+:host {
+	position: relative !important;
+	transform: none !important;
+}
+
+:host-context(downloads-item:last-child) {
+	padding-bottom: 2em !important;
+}

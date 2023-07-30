@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "chrome://downloads CSS",
+  "description": "Minimal custom CSS for chrome://downloads",
+  "version": "0.1",
+  "icons": {
+    "16": "ico/icon16.png",
+    "48": "ico/icon48.png",
+    "128": "ico/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "ico/icon16.png",
+      "48": "ico/icon48.png",
+      "128": "ico/icon128.png"
+    },
+    "default_title": "Downloads"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": ["chrome://downloads/"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["downloads-item.css"],
+    "matches": ["chrome://downloads/*"]
+  }]
+}

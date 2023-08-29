@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "chrome://downloads CSS",
-  "description": "Minimal custom CSS for chrome://downloads",
+  "name": "Minimal chrome://downloads CSS",
+  "description": "Alternative minimal custom CSS for chrome://downloads",
   "version": "0.1",
   "icons": {
     "16": "ico/icon16.png",
